@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathDuel.ShowErPage" BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="your opponent close the application"
+                   Margin="40"
+                   TextColor="DarkBlue"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="25"/>
+            <Button
+                Text="OK"
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                HorizontalOptions="Center"
+                WidthRequest="60"
+                Clicked="Ok_click"
+                />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

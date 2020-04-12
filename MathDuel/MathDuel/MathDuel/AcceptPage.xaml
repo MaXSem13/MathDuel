@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathDuel.AcceptPage"
+             BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="" 
+                   HeightRequest="70"
+                   /> 
+            <Label Text=""
+                   x:Name="InviteLabel"
+                   FontSize="30" 
+                   TextColor="DarkBlue" 
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="20"
+                   />
+
+            <Label Text="Do you want play game?"
+                   FontSize="30" 
+                   TextColor="Yellow" 
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="10"/>
+            
+
+            <Button Text="Yes"
+                    Clicked="Yes_Click"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="DarkBlue"
+                    TextColor="White"
+                   HeightRequest="50"
+                   WidthRequest="100"/>
+            <Label Text="" 
+                   FontSize="20"
+                   x:Name="WaitLab"
+                   TextColor="Yellow"
+                   HeightRequest="70"
+                   />
+            <Button Text="No"
+                    Clicked="No_Click"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    TextColor="White"
+                    BackgroundColor="DarkBlue"
+                   HeightRequest="50"
+                   WidthRequest="100"/>
+
+            <Label Text="" 
+                   TextColor="Red"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

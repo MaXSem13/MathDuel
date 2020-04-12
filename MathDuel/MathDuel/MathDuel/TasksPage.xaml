@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathDuel.TasksPage" BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="1"
+                FontSize="20"
+                x:Name="NumberTask"
+                TextColor="Gold"
+                HorizontalOptions="Center"
+                />
+            <Label x:Name="Timerlabel"
+                   TextColor="WhiteSmoke"
+                   HorizontalOptions="Center"
+                   FontSize="12"
+                   />
+            <Label
+                x:Name="TaskLabel"
+                Text=""
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="Black"
+                BackgroundColor="White"
+                />
+            <Label
+                Text="input your answer"
+                HorizontalOptions="Center"
+                TextColor="DarkBlue"/>
+            <Label
+                Text=""
+                x:Name="AnswerLab"
+                BackgroundColor="White"
+                TextColor="Black"
+                HeightRequest="30"/>
+            <StackLayout Spacing="8" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="but1" BackgroundColor="DarkBlue" Text="1" Clicked="But_Click" TextColor="White"/>
+                <Button x:Name="but2" BackgroundColor="DarkBlue" Text="2" Clicked="But_Click" TextColor="White"/>
+                <Button x:Name="but3" BackgroundColor="DarkBlue" Text="3" Clicked="But_Click" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Spacing="8" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="but4" BackgroundColor="DarkBlue" Text="4" Clicked="But_Click" TextColor="White"/>
+                <Button x:Name="but5" BackgroundColor="DarkBlue" Text="5" Clicked="But_Click" TextColor="White"/>
+                <Button x:Name="but6" BackgroundColor="DarkBlue" Text="6" Clicked="But_Click" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Spacing="8" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="but7" BackgroundColor="DarkBlue" Text="7" Clicked="But_Click" TextColor="White"/>
+                <Button x:Name="but8" BackgroundColor="DarkBlue" Text="8" Clicked="But_Click" TextColor="White"/>
+                <Button x:Name="but9" BackgroundColor="DarkBlue" Text="9" Clicked="But_Click" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Spacing="8" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="but0" BackgroundColor="DarkBlue" Text="0" Clicked="But_Click" TextColor="White"/>
+                <Button x:Name="butComma" BackgroundColor="DarkBlue" Text="." Clicked="But_Click" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Spacing="8" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="del" BackgroundColor="DarkBlue" Text="del" Clicked="But_Click" TextColor="White"/>
+                <Button x:Name="Enter" BackgroundColor="Gold" Text="Enter" Clicked="But_Click" TextColor="Red"/>
+            </StackLayout>
+        </StackLayout>
+        
+
+    </ContentPage.Content>
+</ContentPage>

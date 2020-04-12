@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathDuel.ShowResaltPage" BackgroundColor="LightBlue">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal"  >
+
+            <ListView x:Name="MyListView1"
+            ItemsSource="{Binding Items}"
+            CachingStrategy="RecycleElement"
+                      BackgroundColor="White"
+                      SeparatorColor="DarkBlue"
+                      
+                      >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}" TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
+            <ListView x:Name="MyListView4"
+            ItemsSource="{Binding Items}"
+            CachingStrategy="RecycleElement"
+                      BackgroundColor="White"
+                      SeparatorColor="DarkBlue"
+                      
+                      >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}" TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <ListView x:Name="MyListView2"
+            ItemsSource="{Binding Items}"
+            CachingStrategy="RecycleElement"
+                      SeparatorColor="DarkBlue"
+                      BackgroundColor="White">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}" TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ListView x:Name="MyListView3"
+            ItemsSource="{Binding Items}"
+            CachingStrategy="RecycleElement"
+                      BackgroundColor="White"
+                      SeparatorColor="DarkBlue"
+                      
+                      >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}" TextColor="Black" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+        <Label x:Name="WinLabel"
+               TextColor="Red"
+               FontSize="20"
+               HorizontalOptions="Center"
+               />
+        <Button x:Name="ButOk"
+                Text="OK"
+                Clicked="OK_Click"
+                Margin="100"
+                TextColor="White"
+                BackgroundColor="DarkBlue"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="50"/>
+    </StackLayout>
+
+
+</ContentPage>

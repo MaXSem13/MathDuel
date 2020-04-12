@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MathDuel"
+             BackgroundColor="LightBlue"
+             x:Class="MathDuel.MainPage">
+
+    <StackLayout>
+        <Label Text="Math Duel"
+                   FontSize="45" 
+                   TextColor="DarkBlue" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   WidthRequest="125"/>
+
+        <Entry Placeholder="Input your Nickname" 
+                   x:Name="InputNickname"
+                   BackgroundColor="White"
+                   HeightRequest="40"
+                   WidthRequest="125"/>
+
+        <Label Text="" HeightRequest="30"/>
+        <Entry Placeholder="Input your Password" 
+                   x:Name="InputPassword"
+                   BackgroundColor="White"/>
+
+        <Button Text="Sign In"
+                    Clicked="SignIn_Click"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    TextColor="White"
+                    BackgroundColor="DarkBlue"
+                   HeightRequest="50"
+                   WidthRequest="100"/>
+
+        <Label Text=""
+                   x:Name="SignInInfo"
+                   TextColor="Red"
+                   HeightRequest="30"
+                   VerticalOptions="Center"
+                    HorizontalOptions="Center"/>
+
+        <Button Text="Sign Up"
+                    Clicked="SignUp_Click" 
+                    TextColor="White"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="DarkBlue"
+                    HeightRequest="50"
+                    WidthRequest="100"/>
+
+        <Label Text="" 
+                   x:Name="SignUpInfo"
+                   TextColor="Red"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+
+    </StackLayout>
+
+</ContentPage>

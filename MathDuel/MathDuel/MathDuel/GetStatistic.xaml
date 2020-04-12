@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathDuel.GetStatistic"
+             BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="you answered on"
+                FontSize="20"
+                HeightRequest="30"
+                TextColor="DarkBlue"
+                WidthRequest="250"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="Answers"
+                Text="0"
+                FontSize="40"
+                HeightRequest="50"
+                TextColor="Yellow"
+                WidthRequest="250"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label
+                Text="tasks"
+                FontSize="20"
+                HeightRequest="30"
+                TextColor="DarkBlue"
+                WidthRequest="250"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label
+                Text="you answered correct on"
+                FontSize="20"
+                HeightRequest="30"
+                TextColor="DarkBlue"
+                WidthRequest="250"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label
+                x:Name="CorrectAns"
+                Text="0"
+                FontSize="40"
+                HeightRequest="50"
+                TextColor="Yellow"
+                WidthRequest="250"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Label
+                Text="tasks"
+                FontSize="20"
+                HeightRequest="30"
+                TextColor="DarkBlue"
+                WidthRequest="250"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

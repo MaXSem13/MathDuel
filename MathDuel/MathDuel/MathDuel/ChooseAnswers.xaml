@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathDuel.ChooseAnswers" BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Complexyty tasks?"
+                   TextColor="DarkBlue"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="EndAndExpand"
+                   HeightRequest="30"/>
+            
+            <Switch x:Name="ChooseComplexyty"
+                    OnColor="Yellow"                   
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+            <Label Text="Choose topic of five questions?"
+                   FontSize="20"
+                   TextColor="DarkBlue"
+                   HorizontalOptions="Center"
+                   />
+            <Button Text="Algebra"
+                    BackgroundColor="DarkBlue"
+                    VerticalOptions="Center"
+                    Clicked="Algebra_click"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    Margin="25"
+                    HeightRequest="50"/>
+            <Button Text="Geometry"
+                    BackgroundColor="DarkBlue"
+                    VerticalOptions="Center"
+                    TextColor="White"
+                    Clicked="Geom_click"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    Margin="12"
+                    HeightRequest="50"/>
+            <Button Text="Combinatorics"
+                    BackgroundColor="DarkBlue"
+                    VerticalOptions="Center"
+                    Clicked="Comb_click"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    WidthRequest="150"
+                    Margin="25"
+                    HeightRequest="50"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

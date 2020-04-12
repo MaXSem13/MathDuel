@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathDuel.MainMenuDetail"
+             BackgroundColor="LightBlue"
+             Title="Inviting">
+  <StackLayout Padding="10">
+        <Label Text=""
+           WidthRequest="100"
+           HeightRequest="100"/>
+        <Entry Placeholder="Input Nickname of oponnent" 
+                   x:Name="InputOponnentNick"
+                   BackgroundColor="White"/>
+        <Label Text=""
+               x:Name="IviteLabel"
+               TextColor="Red"
+           WidthRequest="200"
+           HeightRequest="100"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+        <Button Text="Invite"
+              Clicked="Invite_click"
+              BackgroundColor="DarkBlue"
+              TextColor="White"
+              VerticalOptions="Center"
+              HorizontalOptions="Center"
+              WidthRequest="80"
+              HeightRequest="40"/>
+    </StackLayout>
+</ContentPage>
